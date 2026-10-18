@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="background-color:orange ; color:brown; " id ="first">Strike is coming on
+        <span>18 October</span> </h1>
+    <h2 class="third" id="second">It is coming on Dhanteras</h2>
+    <h2>Hello jii</h2>
+    <ul class="third">
+        <li>Fridge</li>
+        <li>Washing machine</li>
+        <li>press</li>
+    </ul>
+</body>
+</html>
+
+
+
+
+<!-- code to write on console on web to manupilate the HTML by use of the javascript  -->
+<!--
+Live reload enabled.
+> const temp = window.document.getElementById("first"');
+< undefined
+› console.dir (temp)
+• hl#first
+‹ undefined
+> typeof temp
+‹ 'object"
+> temp.textContent= "hello dear"
+‹. hello
+-->
+
+
+
+<!-- Before apply the span tag when we have to acess the elment or content -->
+<!--
+const temp = document.getElementById("first");
+undefined
+temp.innerHTML
+'Strike is coming '
+temp.innerText
+'Strike is coming'
+temp.textContent
+'Strike is coming '
+-->
+
+
+
+
+<!-- After apply the span tag when we have to acess the elment or content -->
+<!-- const temp = document.getElementById("first");
+
+undefined
+temp.innerHTML
+'Strike is coming on\n        <span>18 October</span> '
+temp.innerText
+'Strike is coming on 18 October'
+temp.textContent
+'Strike is coming on\n        18 October '
+-->
+
+
+
+<!-- after apply the list tag or any other tag than when we have to acces the list elements -->
+<!--
+const list = document.getElementsByTagName("li")
+undefined
+list
+• HTMLCollection(3) [li, li, li]
+for(let num of list)
+console. log (num)
+•<li>
+:: marker
+"Fridge"
+</li>
+•<i>
+::marker
+"Washing machinei
+</li>
+<li>
+    -->
+
+
+
+
+    <!-- we also acess the elements by the class name  -->
+<!-- 
+    const classBase = document.getElementsByClassName("third")
+undefined
+classBase
+1
+• 0: h2#second. third
+• 1: ul.third
+• second: h2#second. third
+Length: 2
+• [[Prototypell: HTMLCollection
+• HTMLCollection(2) [h2#second.third, ul.third, second: h2#second.third]
+classBase [0]
+<h2 class="third" id-"second">It is coming on Dhanteras</h2>
+classBase [1]
+‹ul class="third">
+·<li>
+::marker
+"Fridge"
+</li>
+•<li>
+:: marker
+"Washing machine"
+< li>
+<li>
+:: marker
+"press"
+<i>
+</ul>
+-->
+
+
+
+
+<!-- we also select on basis of the tag name by - querySelector -->
+
+
+<!--
+
+document.querySelector('#first")
+•<h1 style-"background-color:orange; color:brown; " id-"first">•</hi> document. querySelector("h2")
+<h2 class="third" id="second">It is coming on Dhanteras</h2>
+document. querySelector". third"')
+<h2 class="third" id-"second">It is coming on Dhanteras</h2>
+
+const lista = document.querySelectorAll ("h2")
+undefined
+lista
+• Nodelist(2) Ihz#second.third, h21 i
+• 0: h2#second. third
+• 1: h2
+Length: 2
+• [[Prototypell: NodeList lista[0]
+<h2 class="third" id-"second">It is coming on Dhanteras</h2>
+const arr=l...listal undefined
+arr
+(2)
+[h2#second. third, h2]
+0: h2#second. third
+▶ 1:h2
+length: 2
+•[[Prototypel]: Array(ø)
+-->
